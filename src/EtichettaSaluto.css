@@ -1,0 +1,8 @@
+p {
+    color: yellow;
+}
+
+p::selection, code::selection, a::selection {
+    background-color: black;
+    color: green;
+}
