@@ -1,0 +1,21 @@
+.flex-container {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    display: flex;
+    flex-grow: 1;
+}
+
+.box {
+    width: 100%;
+    border: 1px solid black;
+}

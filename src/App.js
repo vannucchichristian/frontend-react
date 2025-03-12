@@ -1,27 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import EtichettaSaluto from "./EtichettaSaluto";
+//import logo from './logo.svg';
+//import EtichettaSaluto from "./EtichettaSaluto";
+import Box from './Box';
+import './esFlexbox.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <EtichettaSaluto text="Gianni"/>
-        <EtichettaSaluto text="Pinotto!"/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="flex-container">
+      <div className="row">
+          <Box bg_color="orchid" />
+          <Box bg_color="mediumvioletred" />
+          <Box bg_color="orchid" />
+      </div>
+      <div className="row">
+          <Box bg_color="white" />
+      </div>
+      <div className="row">
+          <Box bg_color="green" />
+          <Box bg_color="peru" />
+      </div>
+  </div>
   );
 }
 
